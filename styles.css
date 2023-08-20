@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.pageone{
+    background-color: #0a0a23;
+    color: white;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.floorno.liftno{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+.pageoneheading{
+    font-family: system-ui;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1rem;  
+    color: white;
+}
+
+label{
+  font-family: system-ui;
+  font-size: 1rem;
+}
+
+input{
+    
+    font-family: sans-serif;
+}
+
+.simulator {
+    padding: 2px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width: 200px;
+    border: 0px solid transparent;
+    
+  }
+
+.simulator:focus {
+    background-color: #c5c5db;
+    outline: none;
+}
+
+.buttonsimulate{
+  margin-top: 1.5em;
+  padding: 1px 20px;
+  font-size: 1.4rem;
+  font-family: system-ui;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*next page*/
+
+.backtopageone{
+    background-color: #0a0a23;
+    color: white;
+    margin-top: 1.0em;
+    padding: 1px 18px;
+    font-size: 1rem;
+    font-family: system-ui; 
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (width<400px){
+    
+    label{
+        font-family: Roboto;
+        font-size: 0.7rem;
+      }  
+
+      .buttondiv {
+        margin: 9.5px 11px;
+    }
+    
+    .subdiv{
+        margin-bottom: -7px;
+ }
+}
+
+/* next page */
+.subdiv{
+    display: flex;
+}
+
+span{
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+    color: #0a0a23;
+    margin: auto;
+}
+
+.liftdiv{
+    display: flex;
+    margin-left: 5px;
+}
+
+.lift{
+    width: 50px;
+    height: 60px;
+    margin-right: 6px;
+    background-color: #8080ac;
+    border-radius: 3px;
+    transition-property: transform;
+    transition:ease-out;
+}
+
+.buttondiv{
+    width:35px;
+    display:flex;
+    flex-direction: column;
+    margin: 16.5px 16px;
+    align-self: auto;
+ }
+
+.buttondiv button{
+    color: #0a0a23;
+    margin: 0.8px;
+}
+
+.hrdiv{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+hr{
+    flex-grow:1;
+    height: 3px;
+    border-top: 1px solid #0a0a23;
+} 
+
+.pagetwo{
+    display: none;
+}
+
+.gates{
+    display: flex;
+}
+
+.gate1 , .gate2{
+    width: 30px;
+    height: 60px;
+    margin: 0.5px;
+    background-color:#0a0a23;
+    transition: width 2.5s ease-in-out;
+}
+.gate1-Specificity{
+    transform: translateX(-100%);
+}
+
+.gate2-Specificity{
+    transform: translateX(100%);
+}
